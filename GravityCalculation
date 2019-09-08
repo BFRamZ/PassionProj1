@@ -1,0 +1,40 @@
+public class GravityCalculation {
+import java.util.Scanner;
+   public static void main (String [] args) {
+      Scanner scnr = new Scanner(System.in);
+      double G = 6.673e-11;
+      double MEARTH = 5.98e24;
+      double accelGravity;
+      double distEarthCenter;
+
+      System.out.print("Print Distance to Earth's center: ");
+      distEarthCenter = scnr.nextDouble();
+
+      accelGravity = (G * MEARTH) / (distEarthCenter * distEarthCenter);
+      
+      System.out.print("Acceleration of Gravity of Earth is: ");
+      System.out.println(accelGravity);
+      
+      double MMARS = 6.39e23
+      double distMarsCenter;
+      
+      System.out.print("Print Distance to Mar's center: ");
+      distMarsCenter = scnr.nextDouble();
+      
+      accelGravity = (G * MMARS) / (distMarsCenter * distMarsCenter);
+      
+      System.out.print("Acceleration of Gravity of Mars is ");
+      System.out.println(accelGravity);
+      
+      double MJUPITER = 1.898e27
+      double distJupiterCenter;
+      
+      System.out.print("Print Distance to Jupiters's center: ");
+      distJupiterCenter = scnr.nextDouble();
+      
+      accelGravity = (G * MJUPITER) / (distJupiterCenter * distJupiterCenter);
+      
+      System.out.print("Acceleration of Gravity of Jupiter is ");
+      System.out.println(accelGravity);
+   }
+}
